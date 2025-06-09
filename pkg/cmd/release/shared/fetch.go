@@ -29,6 +29,7 @@ var ReleaseFields = []string{
 	"databaseId",
 	"id",
 	"isDraft",
+	"isLatest",
 	"isPrerelease",
 	"name",
 	"publishedAt",
@@ -47,6 +48,7 @@ type Release struct {
 	Name         string     `json:"name"`
 	Body         string     `json:"body"`
 	IsDraft      bool       `json:"draft"`
+	IsLatest     bool       `json:"latest"`
 	IsPrerelease bool       `json:"prerelease"`
 	CreatedAt    time.Time  `json:"created_at"`
 	PublishedAt  *time.Time `json:"published_at"`

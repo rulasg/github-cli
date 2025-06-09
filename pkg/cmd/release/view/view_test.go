@@ -30,6 +30,7 @@ func TestJSONFields(t *testing.T) {
 		"databaseId",
 		"id",
 		"isDraft",
+		"isLatest",
 		"isPrerelease",
 		"name",
 		"publishedAt",
